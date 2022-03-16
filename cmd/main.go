@@ -1,21 +1,25 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"nbaplayoffstanding/pkg/inputCSV"
+)
 
 func main() {
-	fmt.Println("Hello, 世界")
+	stuff := inputCSV.input("hello")
+	fmt.Println(stuff)
 }
 
 
 type team struct{
-	name
-	wins
-	loses
+	name string
+	wins int8
+	loses int8
 }
 
-type matchup struct{
-	team1
-	team2
-	team1prob
-	team2prob
+type Matchup struct{
+	team1 string
+	team2 string
+	team1prob float64
+	team2prob float64
 }
