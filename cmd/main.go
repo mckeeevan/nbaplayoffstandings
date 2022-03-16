@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"nbaplayoffstanding/pkg/inputCSV"
+
+	"github.com/mckeeevan/nbaplayoffstandings/pkg/inputCSV"
 )
 
 func main() {

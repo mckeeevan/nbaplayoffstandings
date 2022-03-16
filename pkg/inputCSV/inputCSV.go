@@ -1,6 +1,6 @@
 package inputCSV
 
 
-func input(filename string)games []Matchup(
+func Input(filename string)games []Matchup(
     var games[]Matchup
 )
