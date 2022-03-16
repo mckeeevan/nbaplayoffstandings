@@ -3,11 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/mckeeevan/nbaplayoffstandings/pkg/inputCSV"
 )
 
 func main() {
-	stuff := inputCSV.input("hello")
+	stuff := input("hello")
 	fmt.Println(stuff)
 }
 
@@ -23,4 +22,12 @@ type Matchup struct{
 	team2 string
 	team1prob float64
 	team2prob float64
+}
+
+
+
+func input(filename string) []Matchup {
+    var games []Matchup
+	games = append(games, Matchup{team1:"Den", team2: "Mil", team1prob: .9302, team2prob: .1202})
+	return games
 }
